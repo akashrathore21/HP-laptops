@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>HP-Laptop</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hp-Laptops</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/laptop.html">Laptop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Desktop.html">Desktop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Music.html">Music</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Accesserious.html">Support</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                            <li><a class="dropdown-item" href="#">Newly</a></li>
+                            <li><a class="dropdown-item" href="#">Latest</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#SignupModal">Sign Up</button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---->
+  <!-- login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login to HP-laptop</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confim Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- signup Modal -->
+ 
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignupModalLabel">Sign up to HP-laptop</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confrim Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <button type="submit" class="btn btn-primary">Login Account</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    <!---->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="hp1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to HP-Laptops</h2>
+                    <p></p>
+
+                    <button class="btn btn-dark">Upcoming</button>
+                    <button class="btn btn-primary">Laptops</button>
+                    <button class="btn btn-success">Desktop</button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="hp2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h2>We will Introduce you to the Upcoming new Technology</h2>
+                    <p>Deeply Dive With the Teachnology</p>
+                    <button class="btn btn-dark">Upcoming</button>
+                    <button class="btn btn-primary">Laptops</button>
+                    <button class="btn btn-success">Desktop</button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="hp3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h2>Make a history in your Field</h2>
+                    <p>Deeply Dive With the Teachnology</p>
+                    <button class="btn btn-dark">Upcoming</button>
+                    <button class="btn btn-primary">Laptops</button>
+                    <button class="btn btn-success">Desktop</button>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container my-4">
+        <div class="row mx-0">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-500 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">Specture</h3>
+                        <div class="mb-1 text-bold">Starting from: ₹134,999</div>
+                        <p class="card-text mb-auto">HP Spectre is for the style conscious student or home user. Enjoy
+                            unmatched performance and security</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="spec.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">ENVY</h3>
+                        <div class="mb-1 text-bold">Starting from: ₹84,999</div>
+                        <p class="mb-auto">HP ENVY is built to work and create with ease. With fast-charging, long-life
+                            batteries and killer audio.</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="envy.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mx-0">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-500 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">Pavilion</h3>
+                        <div class="mb-1 text-black">Starting from: ₹66,999</div>
+                        <p class="card-text mb-auto">On trend designs, HP Pavilion will give you all the connectivity
+                            you need in an affordable device.</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="pav.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">OMEN</h3>
+                        <div class="mb-1 text-bold">Starting from: ₹119,999 </div>
+                        <p class="mb-auto">High refresh rate displays,
+                            gaming-class graphics and CPU’s. An OMEN rig
+                            won’t let you down.</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="brands_omen_img.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+    <div class="container my-4">
+        <div class="row mx-0">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-500 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">EliteBook</h3>
+                        <div class="mb-1 text-bold">Starting from: ₹129,796</div>
+                        <p class="card-text mb-auto">HP’s most secure laptops & convertibles. Ultrathin design with
+                            performance and versatility as standard.</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="brands_elitebook_img.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">ZBook</h3>
+                        <div class="mb-1 text-black">Starting from: ₹96,573</div>
+                        <p class="mb-auto">Portable powerhouses designed for technical and creative professionals, with
+                            pro-grade graphics performance.</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="zbook_img_v3.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mx-0">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-500 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">Pavilion Gaming</h3>
+                        <div class="mb-1 text-bold black">Starting from: ₹68,784</div>
+                        <p class="card-text mb-auto">Experience high-grade graphics and processing power that's perfect
+                            for gaming and multi-tasking.</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="brands_pavgaming_img.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Hp-laptops</strong>
+                        <h3 class="mb-0">ProBook</h3>
+                        <div class="mb-1 text-black"> Starting from:  ₹46,074 </div>
+                        <p class="mb-auto">Power, style and value - everyday business devices combining performance and
+                            affordability.</p>
+                        <a href="#" class="stretched-link">Features</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="brands_probook_img.jpg" alt="" class="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2021–2022 HP-laptops, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
