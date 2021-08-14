@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>HP-Laptop</title>
+</head>
+
+
+<div style="background-color: aliceblue;"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hp-Laptops</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/laptop.html">Laptop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Desktop.html">Desktop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Accessories.html">Accesories</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Printers.html">Printers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Monitors.html">Monitors</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Support.html">Support</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                            <li><a class="dropdown-item" href="#">Newly</a></li>
+                            <li><a class="dropdown-item" href="#">Latest</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#SignupModal">Sign Up</button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!---->
+    <!-- login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to HP-laptop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confim Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signup Modal -->
+
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignupModalLabel">Sign up to HP-laptop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confrim Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="hp keyboard.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP C2500 Desktop</h3>
+                                
+                            <h4 class="card-text">Starting from: ₹949 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="pen.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP Pens</h3>
+                            <h4 class="card-text">Starting from: ₹3,299 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="bag.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP Classic Briefcase</h3>
+                            <h4 class="card-text">Starting from: ₹1,149 (incl. of all taxes</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="headphones.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+
+                        <div class="card-body">
+                            <h3 class="card-text">Headphone with Microphone</h3>
+                            <h4 class="card-text">Starting from: ₹670 (incl. of all taxes)</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                     <button type="button" class="btn btn-primary">Show Now</button>
+                                    
+                                    </div>
+                                    <button type="button" class="btn btn-primary">View details</button>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="battery.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="mouse.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="audio.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="docks.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="drive.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="adapter.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="cables.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="pavbag.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="powerbank.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+                      <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="hp keyboard.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="ram.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="leadjpg.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="bluetoth.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="speaker.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="webcamera.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="speker2.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+                  <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="mouse2.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="bussiness.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="flash.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="vga.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="g4.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                    <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="dvi.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="newmouse.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+    
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="hub.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="gaming.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="gamingkeyboard.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="headshet.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="silver2.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Show Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+              
+                
+                <div class="col">
+                    <div class="card shadow-sm mx-2">
+                        <img src="silver.jpg" alt="" class="bd-placeholder-img card-img-top" width="100%" height="257">
+
+                        <div class="card-body">
+                            <h3 class="card-text">HP OA04 Notebook Battery</h3>
+                            <h4 class="card-text">Starting from: ₹3,499 (incl. of all taxes)</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                 <button type="button" class="btn btn-primary">Shop Now</button>
+                                
+                                </div>
+                                <button type="button" class="btn btn-primary">View details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            
+            </body>
+            </html>
